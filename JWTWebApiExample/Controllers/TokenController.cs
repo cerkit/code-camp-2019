@@ -6,7 +6,6 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using JWTExample.Common.Models;
-using JWTWebApiExample.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -34,7 +33,10 @@ namespace JWTWebApiExample.Controllers
             {
                 var claims = new[]
                 {
-                    new Claim(ClaimTypes.Name, request.Username)
+                    new Claim(ClaimTypes.Name, request.Username),
+                    new Claim(ClaimTypes.NameIdentifier, "1234", ClaimValueTypes.Integer),
+                    new Claim("LastLogin", DateTime.Now.ToString()),
+                    new Claim(ClaimTypes.GivenName, "Michael Earls"),
                 };
 
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["SecurityKey"]));

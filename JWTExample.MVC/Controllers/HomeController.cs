@@ -1,15 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
 namespace JWTExample.MVC.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : PrincipalController
     {
         public ActionResult Index()
         {
+            var jwtToken = new JwtSecurityToken(Session["Token"].ToString());
+            ViewBag.Claims = jwtToken.Claims.Select(c => $"{c.Type} = {c.Value?.ToString()}");
+            ViewBag.UserClaims = User.Claims;
+            ViewBag.User = User;
             return View();
         }
 

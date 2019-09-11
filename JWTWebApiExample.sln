@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTExample.WebApi", "JWTWebApiExample\JWTExample.WebApi.csproj", "{2A35D95D-3A30-415D-B130-146CD5A1BCEE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTExample.Common", "JWTExample.Common\JWTExample.Common.csproj", "{E91AD50E-E39F-4FE3-AB79-5F96EA738AC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JWTExample.Common", "JWTExample.Common\JWTExample.Common.csproj", "{E91AD50E-E39F-4FE3-AB79-5F96EA738AC0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTExample.MVC", "JWTExample.MVC\JWTExample.MVC.csproj", "{6E7C6A8F-84CC-4D0C-850D-EFB88E3A2831}"
 EndProject
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2A35D95D-3A30-415D-B130-146CD5A1BCEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A35D95D-3A30-415D-B130-146CD5A1BCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A35D95D-3A30-415D-B130-146CD5A1BCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A35D95D-3A30-415D-B130-146CD5A1BCEE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E91AD50E-E39F-4FE3-AB79-5F96EA738AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E91AD50E-E39F-4FE3-AB79-5F96EA738AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E91AD50E-E39F-4FE3-AB79-5F96EA738AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU

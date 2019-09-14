@@ -22,7 +22,7 @@ namespace JWTExample.MVC.Controllers
             var loginJson = JsonConvert.SerializeObject(loginModel);
             using(var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("http://localhost:63274/");
+                client.BaseAddress = new Uri("http://localhost:49823/");
                 //client.DefaultRequestHeaders.Accept.Clear();
                 //client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 var result = await client.PostAsync("api/Token", new StringContent(loginJson, Encoding.UTF8, "application/json"));
